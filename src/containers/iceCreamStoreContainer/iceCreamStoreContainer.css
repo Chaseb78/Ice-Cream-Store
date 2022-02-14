@@ -1,0 +1,11 @@
+.menuitems {
+  margin-top: -15px;
+}
+
+.buttons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 15px;
+}
