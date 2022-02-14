@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './orderAppContainer.css';
 import OrderTable from '../../components/orderTable';
+import AddOrderForm from '../../components/addOrderComponent';
 
 const OrderApp = () => {
   const ordersData = [
@@ -23,10 +24,10 @@ const OrderApp = () => {
 
   const [orders, setOrders] = useState(ordersData);
 
-  const addOrder = () => {
-    order.id = order.length + 1 
-    setOrders([...orders, order])
-  }
+  const addOrder = (order) => {
+    order.id = orders.length + 1;
+    setOrders([...orders, order]);
+  };
 
   return (
     <div className="container">
@@ -34,7 +35,7 @@ const OrderApp = () => {
       <div className="flex-row">
         <div className="flex-large">
           <h2>Add order</h2>
-          
+          <AddOrderForm addOrder={addOrder} />
         </div>
         <div className="flex-large">
           <h2>View orders</h2>

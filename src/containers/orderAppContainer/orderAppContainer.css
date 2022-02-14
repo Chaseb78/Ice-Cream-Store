@@ -377,7 +377,7 @@ html {
 }
 
 body {
-  color: #404040;
+  color: white;
   background: white;
   font-size: 1rem;
 }
@@ -407,7 +407,7 @@ h5 {
   font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
-  color: #404040;
+  color:  white;
 }
 
 h1:not(:first-child),
@@ -502,7 +502,7 @@ pre {
   background: transparent;
   padding: 1rem;
   tab-size: 2;
-  color: #404040;
+  color:  white;
   font-family: Menlo, monospace;
   font-size: 14px;
   margin: 0 0 1.5rem 0;
@@ -518,7 +518,7 @@ kbd {
   border: 1px solid #ccc;
   border-radius: 3px;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
-  color: #333;
+  color:  white;
   display: inline-block;
   font-family: Helvetica, Arial, sans-serif;
   font-size: 13px;
@@ -529,7 +529,7 @@ kbd {
 }
 
 :not(pre) > code {
-  color: #404040;
+  color:  white;
   background: transparent;
   font-family: Menlo, monospace;
   font-size: 14px;
@@ -752,7 +752,7 @@ dd {
 
 .alternate-background {
   background: #fafafa;
-  color: #404040;
+  color:  white;
 }
 
 .space-between {
@@ -837,14 +837,14 @@ a.accent-button:active {
 a.muted-button {
   background: transparent;
   border: 1px solid #cdcdcd;
-  color: #4e4e4e;
+  color:  white;
 }
 
 .muted-button:hover, .muted-button:focus, .muted-button:active,
 a.muted-button:hover,
 a.muted-button:focus,
 a.muted-button:active {
-  color: #4e4e4e;
+  color:  white;
   border: 1px solid #818181;
   background: transparent;
 }
@@ -909,7 +909,7 @@ legend {
 }
 
 select {
-  color: #404040;
+  color:  white;
   -webkit-appearance: none;
   -moz-appearance: none;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAAvklEQVQoFY2QMQqEMBBFv7ERa/EMXkGw11K8QbDXzuN4BHv7QO6ifUgj7v4UAdlVM8Uwf+b9YZJISnlqrfEUZVlinucnBGKaJgghbiHOyLyFKIoCbdvecpyReYvo/Ma2bajrGtbaC58kCdZ1RZ7nl/4/4d5EsO/7nzl7IUtodBexMMagaRrs+06JLMvcNWmaOv2W/C/TMAyD58dxROgSmvxFFMdxoOs6lliWBXEcuzokXRbRoJRyvqqqQvye+QDMDz1D6yuj9wAAAABJRU5ErkJggg==) right center no-repeat;
@@ -969,7 +969,7 @@ textarea.is-success:active {
 ::-moz-placeholder,
 :-moz-placeholder,
 :-ms-input-placeholder {
-  color: #9a9a9a;
+  color: white;
 }
 
 /**
