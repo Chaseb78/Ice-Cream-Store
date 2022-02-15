@@ -22,7 +22,7 @@ const IceCreamStore = () => {
 
   return (
     <div style={{ color: 'silver' }}>
-      <h2 style={{ color: 'blue' }}> Ice Cream Store </h2>
+      <h2 style={{ color: 'blue' }}> Ice Cream Store Menu </h2>
 
       <h3> Flavors </h3>
       <div className={'menuitems'}>

@@ -1,11 +1,17 @@
 import React from 'react';
 import IceCreamStore from './containers/iceCreamStoreContainer';
-import OrderApp from "./containers/orderAppContainer"
+import OrderApp from './containers/orderAppContainer';
 import './style.css';
 
 export default function App() {
   return (
-    <div style={{ textAlign: 'center', backgroundColor: 'black' }}>
+    <div
+      style={{
+        backgroundColor: 'black',
+        paddingTop: '10px',
+        textAlign: 'center',
+      }}
+    >
       <h1 style={{ color: 'magenta' }}>
         Hello Welcome to the Ice Cream Store!
       </h1>

@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
-const AddOrderForm = (props) => {
-  const initialFormState = { id: null, name: '', orderInfo: '' };
-  const [order, setOrder] = useState(initialFormState);
+const EditOrderForm = (props) => {
+  const [order, setOrder] = useState(props.currentOrder);
+
+  useEffect(() => {
+    setOrder(props.currentOrder);
+  }, [props]);
 
   const handleInputChange = (event) => {
     const { name, value } = event.target;
@@ -14,10 +17,8 @@ const AddOrderForm = (props) => {
     <form
       onSubmit={(event) => {
         event.preventDefault();
-        if (!order.name || !order.orderInfo) return;
 
-        props.addOrder(order);
-        setOrder(initialFormState);
+        props.updateOrder(order.id, order);
       }}
     >
       <label>Name</label>
@@ -36,9 +37,15 @@ const AddOrderForm = (props) => {
         value={order.orderInfo}
         onChange={handleInputChange}
       />
-      <button>Add new order</button>
+      <button>Update Order</button>
+      <button
+        onClick={() => props.setEditing(false)}
+        className="button muted-button"
+      >
+        Cancel
+      </button>
     </form>
   );
 };
 
-export default AddOrderForm;
+export default EditOrderForm;
