@@ -3,8 +3,8 @@ import React from 'react';
 const IceCream = (props) => {
   return (
     <div>
-      {props.bestFlavors} {props.bestTopping} {props.calories}
-      {props.coneChoices}
+      {props.bestFlavors} {props.bestTopping} {props.coneChoices}{' '}
+      {props.calories}
     </div>
   );
 };

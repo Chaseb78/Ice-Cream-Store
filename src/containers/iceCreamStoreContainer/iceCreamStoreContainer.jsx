@@ -5,11 +5,11 @@ import Size from '../../components/sizeComponent';
 
 const IceCreamStore = () => {
   const iceCreamFlavors = [
-    { name: 'Vanilla' },
-    { name: 'Choclate' },
-    { name: 'Strawberry' },
-    { name: 'Rainbow' },
-    { name: 'CookieDough' },
+    { name: 'Vanilla', calories: '120 calories' },
+    { name: 'Choclate', calories: '210 calories' },
+    { name: 'Strawberry', calories: '175 calories' },
+    { name: 'Rainbow', calories: '150 calories' },
+    { name: 'CookieDough', calories: '250 calories' },
   ];
   const iceCreamToppings = [
     { name: 'Sprinkles', calories: '40 calories' },
@@ -19,9 +19,9 @@ const IceCreamStore = () => {
   ];
 
   const coneOptions = [
-    { name: 'Waffle' },
-    { name: 'Sugar' },
-    { name: 'Pretzel' },
+    { name: 'Waffle', calories: '80 calories' },
+    { name: 'Sugar', calories: '100 calories' },
+    { name: 'Pretzel', calories: '90 calories' },
   ];
 
   const sizes = ['Small', 'Medium', 'large'];
@@ -32,25 +32,25 @@ const IceCreamStore = () => {
       <h3>Cone Options</h3>
       <div className={'menuitems'}>
         {coneOptions.map((option) => (
-          <IceCream coneChoices={option.name} />
-        ))}{' '}
-      </div>
-      <h3> Flavors </h3>
-      <div className={'menuitems'}>
-        {iceCreamFlavors.map((flavor) => (
-          <IceCream bestFlavors={flavor.name} />
-        ))}
-      </div>
-      <h3> Toppings </h3>
-      <div className={'menuitems'}>
-        {iceCreamToppings.map((topping) => (
-          <IceCream bestTopping={topping.name} calories={topping.calories} />
+          <IceCream coneChoices={option.name} calories={option.calories}  />
         ))}
       </div>
       <h3> Size </h3>
       <div className={'menuitems'} style={{ marginBottom: '15px' }}>
         {sizes.map((size) => (
           <Size sizeChoices={size} />
+        ))}
+      </div>
+      <h3> Flavors </h3>
+      <div className={'menuitems'}>
+        {iceCreamFlavors.map((flavor) => (
+          <IceCream bestFlavors={flavor.name} calories={flavor.calories} />
+        ))}
+      </div>
+      <h3> Toppings </h3>
+      <div className={'menuitems'}>
+        {iceCreamToppings.map((topping) => (
+          <IceCream bestTopping={topping.name} calories={topping.calories} />
         ))}
       </div>
     </div>
