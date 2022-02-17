@@ -61,7 +61,7 @@ const OrderApp = () => {
         <div className="flex-large">
           {editing ? (
             <div>
-              <h2>Edit user</h2>
+              <h2>Edit Order</h2>
               <EditOrderForm
                 setEditing={setEditing}
                 currentOrder={currentOrder}
@@ -70,7 +70,7 @@ const OrderApp = () => {
             </div>
           ) : (
             <div>
-              <h2>Add user</h2>
+              <h2>Add Order</h2>
               <AddOrderForm addOrder={addOrder} />
             </div>
           )}
