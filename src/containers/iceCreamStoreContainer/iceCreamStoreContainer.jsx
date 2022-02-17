@@ -18,12 +18,23 @@ const IceCreamStore = () => {
     { name: 'Oreos', calories: '45 calories' },
   ];
 
+  const coneOptions = [
+    { name: 'Waffle' },
+    { name: 'Sugar' },
+    { name: 'Pretzel' },
+  ];
+
   const sizes = ['Small', 'Medium', 'large'];
 
   return (
     <div style={{ color: 'silver' }}>
       <h2 style={{ color: 'blue' }}> Ice Cream Store Menu </h2>
-
+      <h3>Cone Options</h3>
+      <div className={'menuitems'}>
+        {coneOptions.map((option) => (
+          <IceCream coneChoices={option.name} />
+        ))}{' '}
+      </div>
       <h3> Flavors </h3>
       <div className={'menuitems'}>
         {iceCreamFlavors.map((flavor) => (

@@ -3,7 +3,7 @@ import IceCreamStore from './containers/iceCreamStoreContainer';
 import OrderApp from './containers/orderAppContainer';
 import './style.css';
 
-export default function App() {
+const App = () => {
   return (
     <div
       style={{
@@ -23,4 +23,6 @@ export default function App() {
       />
     </div>
   );
-}
+};
+
+export default App;
